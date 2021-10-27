@@ -1,19 +1,18 @@
 PHPtest
 
 Jeg har udarbejet en lille solop og nedgangs-præsentation for Kolding og København
-Jeg har valgt at tage udgangspunkt i at programmet skulle være så dynamisk så muligt lige på stående fod.
+Jeg har valgt at tage udgangspunkt i at programmet skulle være så dynamisk så muligt, dog er der ikke tagte højde for sommer/vintertid i denne
+præsentation.
 
 Jeg har brugt en lang række metoder som PHP bruger til at beregne og formatere outputtet korrekt så det passer til
 de værktøjer vi bruger.
 
 Der bliver indhentet og beregnet en tid vha. DateTime samt en funktion som bliver brugt til at udregne den sidste dag på ugen.
 Med dette er vi i stand til at afgrænse vores DataPicker, så vi kun kan vælge inden fra dags dato til slutningen af den pågyndte uge.
+Det er ikke muligt at vælge en specifik dato, så den data som vises er for dags dato.
 
 Til vores selectbox bruger et script til at opdatere siden til den valgte by, der outputtes derefter på skærmen hvilken by vi har valgt.
 Jeg har brugt en switch case til at skifte mellem byernes koordinater.
 
-Jeg har kæmpet med at få sat datoen efter man har valgt dem og koordinaterne stemmer ikke helt med de tal, jeg har søgt mig frem til faktisk er
-de reele.
-Det kunne derfor vores spæendende, at uddybet hvordan løsningen faktisk skulle klares i ren PHP samt hvordan de rette koordinater faktisk
-skal bruges i en application.
+
 
