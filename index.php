@@ -58,14 +58,15 @@ Vælg din by
 
 <?php
 //Switch case som bruges til at skifte koordinaterne mellem byerne, denne vil udvides med flere byer
+//Der er ikke taget højde for sommer og vintertid i denne præsentation.
   switch ($city) {
     case "Kolding":
-      echo 'Solen står op kl. ' .date_sunrise(time(), SUNFUNCS_RET_STRING, 55.4, -9.4);
-      echo ' og solen går ned kl.' .date_sunset(time(), SUNFUNCS_RET_STRING, 55.4, -9.4);
+      echo 'Solen står op kl. ' .date_sunrise(time(), SUNFUNCS_RET_STRING, 55.4960, 9.4731, 90, 2);
+      echo ' og solen går ned kl.' .date_sunset(time(), SUNFUNCS_RET_STRING, 55.4960, 9.4731, 90, 2);
         break;
     case "København":
-      echo 'Solen står op kl. ' .date_sunrise(time(), SUNFUNCS_RET_STRING, 55, 13, 90, 1);
-      echo ' og solen går ned kl.' .date_sunset(time(), SUNFUNCS_RET_STRING, 55, 13, 90, 1);
+      echo 'Solen står op kl. ' .date_sunrise(time(), SUNFUNCS_RET_STRING, 55.6761, 12.5683, 90, 2);
+      echo ' og solen går ned kl.' .date_sunset(time(), SUNFUNCS_RET_STRING, 55.6761, 12.5683, 90, 2);
         break;
   }
 
