@@ -23,7 +23,6 @@ function getWeekEndDate($week, $year)
     return $end_result;
   }
   $dates=getWeekEndDate($week,$year);
-
 ?>
 
 <h2>
@@ -58,17 +57,17 @@ Vælg din by
 
 
 <?php
-//Switch case som bruges til at skifte koordinaterne mellem byerne, denne vil udvides med flere byer.
+//Switch case som bruges til at skifte koordinaterne mellem byerne, denne vil udvides med flere byer
   switch ($city) {
     case "Kolding":
-      echo 'Solen står op kl. ' .date_sunrise($time, SUNFUNCS_RET_STRING, 55, 9, 90, 1);
-      echo ' og solen går ned kl.' .date_sunset($time, SUNFUNCS_RET_STRING, 55, 9, 90, 1);
+      echo 'Solen står op kl. ' .date_sunrise(time(), SUNFUNCS_RET_STRING, 55.4, -9.4);
+      echo ' og solen går ned kl.' .date_sunset(time(), SUNFUNCS_RET_STRING, 55.4, -9.4);
         break;
     case "København":
-      echo 'Solen står op kl. ' .date_sunrise($now, SUNFUNCS_RET_STRING, 55, 13, 90, 1);
-      echo ' og solen går ned kl.' .date_sunset($now, SUNFUNCS_RET_STRING, 55, 13, 90, 1);
+      echo 'Solen står op kl. ' .date_sunrise(time(), SUNFUNCS_RET_STRING, 55, 13, 90, 1);
+      echo ' og solen går ned kl.' .date_sunset(time(), SUNFUNCS_RET_STRING, 55, 13, 90, 1);
         break;
-}
+  }
 
 
 ?>
